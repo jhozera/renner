@@ -97,6 +97,7 @@ nav img{
     background-color: #dfdfdf;
     gap: 50px;
     text-align: center; 
+    height: 100vh;
 }
 
 .vantagens h1{
@@ -147,6 +148,146 @@ nav img{
 
 
 
+.app{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    gap: 50px;
+    background: linear-gradient(to bottom, #D90505 50%, white 50%);}
+
+
+.text-app{
+    display: flex;
+    flex-direction: column;
+    font-family: "Montserrat", serif;
+    gap: 30px;
+    padding-top: 20px;
+}
+
+.text-app h3{
+    font-size: 35px;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+}
+
+.text-app p{
+    font-size: 20px;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+
+.title-trc{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 100px;
+}
+
+.title-trc h4{
+    font-size: 35px;
+    font-weight: 300;
+    font-family: "Montserrat", serif;
+
+}
+
+.trc-pr {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px;
+    height: 50vh;
+}
+
+.trc-dt {
+    position: relative;
+    width: 400px;
+    height: 150px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.trc-dt:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.trc-dt img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: filter 0.3s ease;
+}
+
+.trc-dt:hover img {
+    filter: brightness(0.7);
+}
+
+.text-overlay {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+    font-size: 16px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+}
+
+.text-overlay a {
+    text-decoration: none;
+    color: white;
+}
+
+.text-overlay p {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.footer-content {
+    background-color: #232323;
+    color: #ffffff;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+  
+  .footer-text {
+    max-width: 400px;
+    margin-bottom: 20px;
+  }
+  
+  .footer-title {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0 0 10px;
+    color: #ffffff; 
+  }
+  
+  .footer-info {
+    font-size: 14px;
+    margin: 5px 0;
+    color: #dcdcdc;
+  }
+
+  .footer-bottom {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 12px;
+    color: #b5b5b5;
+  }
 #menu {
     display: none;
     position: fixed; 
@@ -190,9 +331,6 @@ nav img{
     margin-left: 20px;
 }
 
-.navigation-mobile{
-    display: none;
-}
 
 /* 🔹🔹🔹 RESPONSIVIDADE 🔹🔹🔹 */
 
@@ -203,61 +341,166 @@ nav img{
         max-width: 1000px;
     }
 
+    
+    .navigation-mobile{
+        display: none;
+    }
+
+    .image-mobile{
+        display: none;
+    }
 }
 
 
 
 /* Telas até 1024px */
 @media (max-width: 1024px) {
-    .container {
-        flex-direction: column;
-        align-items: center;
+    .button {
+        width: 100%;
+        font-size: 13px;
+        padding: 8px;
+    }
+
+    .buttons-container{
+        width: 100%;
+    }
+     
+    .button img {
+        height: 24px;
+    }
+
+    .app{
         text-align: center;
     }
 
-    .image-container img {
-        max-width: 90%;
+    .text-app h3{
+        font-size: 30px;
     }
 
-    .buttons-container {
-        align-items: center;
+    .vantagens-gt{
+        display: grid;
+        grid-template-columns: 2fr;
+        gap: 20px;
+        grid-template-areas: 
+        "lo1"
+        "lo2"
+        "lo3"
+        "lo4";
     }
 
-   
+    .vantagens{
+        height: 200vh;
+    }
+
+    .navigation{
+        display: none;
+    }
+    
+    .trc-pr{
+        height: 110vh;
+    }
+    
+
+    .image-container{
+        display: none;
+    }
 
 }
 
 /* Telas até 768px */
 @media (max-width: 768px) {
-    .container {
-        flex-direction: column;
-    }
-
-    .image-container img {
-        max-width: 80%;
-    }
-
-    .buttons-container {
+    .button {
         width: 100%;
-        align-items: center;
-    }
-
-    .button {
-        width: 80%;
-        font-size: 14px;
-        padding: 10px;
-    }
-}
-
-/* Telas até 480px */
-@media (max-width: 480px) {
-    .button {
-        width: 90%;
         font-size: 13px;
         padding: 8px;
     }
 
     .button img {
         height: 24px;
+    }
+
+    .app{
+        text-align: center;
+    }
+
+    .text-app h3{
+        font-size: 30px;
+    }
+
+    .vantagens-gt{
+        display: grid;
+        grid-template-columns: 2fr;
+        gap: 20px;
+        grid-template-areas: 
+        "lo1"
+        "lo2"
+        "lo3"
+        "lo4";
+    }
+
+    .vantagens{
+        height: 200vh;
+    }
+
+    .navigation{
+        display: none;
+    }
+    
+    .trc-pr{
+        height: 110vh;
+    }
+    
+
+    .image-container{
+        display: none;
+    }
+}
+
+/* Telas até 480px */
+@media (max-width: 480px) {
+    .button {
+        width: 100%;
+        font-size: 13px;
+        padding: 8px;
+    }
+
+    .button img {
+        height: 24px;
+    }
+
+    .app{
+        text-align: center;
+    }
+
+    .text-app h3{
+        font-size: 30px;
+    }
+
+    .vantagens-gt{
+        display: grid;
+        grid-template-columns: 2fr;
+        gap: 20px;
+        grid-template-areas: 
+        "lo1"
+        "lo2"
+        "lo3"
+        "lo4";
+    }
+
+    .vantagens{
+        height: 200vh;
+    }
+
+    .navigation{
+        display: none;
+    }
+    
+    .trc-pr{
+        height: 110vh;
+    }
+    
+
+    .image-container{
+        display: none;
     }
 }
