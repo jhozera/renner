@@ -20,3 +20,18 @@ document.getElementById("button-mobilefechar").onclick = function() {
 
 
 
+document.getElementById("button").onclick = function() {
+    let atualizacao = document.getElementById("modal-overlay");
+
+
+    if(atualizacao.style.display ==="none"){
+          atualizacao.style.display = "block";
+    } else {
+        atualizacao.style.display = "none";
+    }
+}
+
+function closeModal(){
+    document.getElementById('modal-overlay').style.display = 'none';
+}
+
