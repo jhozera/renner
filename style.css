@@ -288,6 +288,28 @@ nav img{
     font-size: 12px;
     color: #b5b5b5;
   }
+
+  .button-app{
+    text-align: center;
+    background-color: #D90505;
+    width:200px;
+    height:40px;
+    align-content: center;
+    border-radius: 20px;
+
+  }
+
+  .button-app a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: "Montserrat", serif;
+
+  }
+
+
+
 #menu {
     display: none;
     position: fixed; 
@@ -331,15 +353,14 @@ nav img{
     margin-left: 20px;
 }
 
-
-/* 🔹🔹🔹 RESPONSIVIDADE 🔹🔹🔹 */
-
-@media (min-width: 1024px) {
+@media (min-width:1501px){
     .container {
         display: flex;
         align-items: center;
-        max-width: 1000px;
+        max-width: 100%;
+        width: 100vw; 
     }
+    
 
     
     .navigation-mobile{
@@ -349,12 +370,47 @@ nav img{
     .image-mobile{
         display: none;
     }
+
+    .image-container img{
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+    .image-mobile{
+        display: none;
+    }
+}
+
+
+@media (min-width: 1025px) and (max-width:1500px) {
+    .container {
+        display: flex;
+        align-items: center;
+        max-width: 100%;
+        width: 100vw; 
+    }
+    
+
+    
+    .navigation-mobile{
+        display: none;
+    }
+
+    .image-mobile{
+        display: none;
+    }
+
+    .image-container img{
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
 }
 
 
 
 /* Telas até 1024px */
-@media (max-width: 1024px) {
+@media (max-width: 1024px){
     .button {
         width: 100%;
         font-size: 13px;
@@ -377,29 +433,19 @@ nav img{
         font-size: 30px;
     }
 
-    .vantagens-gt{
-        display: grid;
-        grid-template-columns: 2fr;
-        gap: 20px;
-        grid-template-areas: 
-        "lo1"
-        "lo2"
-        "lo3"
-        "lo4";
-    }
 
     .vantagens{
-        height: 200vh;
+        height: 120vh;
     }
 
+    
+    .trc-pr{
+        height: 80vh;
+    }
+    
     .navigation{
         display: none;
     }
-    
-    .trc-pr{
-        height: 110vh;
-    }
-    
 
     .image-container{
         display: none;
