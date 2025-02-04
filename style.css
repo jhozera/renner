@@ -405,6 +405,10 @@ nav img{
         display: none;
     }
 
+    .container{
+        flex-direction: column;
+    }
+
 }
 
 /* Telas até 768px */
@@ -454,6 +458,11 @@ nav img{
     .image-container{
         display: none;
     }
+
+    .container{
+        flex-direction: column;
+    }
+   
 }
 
 /* Telas até 480px */
@@ -503,4 +512,9 @@ nav img{
     .image-container{
         display: none;
     }
+    
+    .container{
+        flex-direction: column;
+    }
+   
 }
