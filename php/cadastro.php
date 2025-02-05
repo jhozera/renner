@@ -8,18 +8,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $numero = $_POST["numero"];
 
 
-    try {
-        $sql = "INSERT INTO dados_renner (NOME, EMAIL, NUMERO) VALUES (?, ?, ?) 
-                ON DUPLICATE KEY UPDATE NOME = ?, EMAIL = ?, NUMERO = ?";
+try {
+        $sql = "INSERT INTO  LADING_RENNER (nome, email, telefone) VALUES (?, ?, ?)";
 
 
         $stmt = $conexao->prepare($sql);
         $stmt->bindParam(1, $name, PDO::PARAM_STR);
         $stmt->bindParam(2, $email, PDO::PARAM_STR);
         $stmt->bindParam(3, $numero, PDO::PARAM_STR);
-        $stmt->bindParam(4, $name, PDO::PARAM_STR);
-        $stmt->bindParam(5, $email, PDO::PARAM_STR);
-        $stmt->bindParam(6, $numero, PDO::PARAM_STR);
 
         $stmt->execute();
 
@@ -33,3 +29,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo "Erro ao cadastrar: " . $e->getMessage();
     }
 }
+
+
