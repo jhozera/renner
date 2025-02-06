@@ -9,23 +9,27 @@
 <body>
     <header>
         <nav class="navigation">
-            <img src="./imagem/logo renner.png">
+            <div class="img-nav">
+                <img src="./imagem/logo renner.png">
+                <img src="./imagem/logo realize.png" style="width: 40%; height: 30px;">
+           </div>
             <div class="button-nav">
                 <a href="#">Venha nos cohecer</a>
-                <a href="#">Serasa</a>
-                <a href="#">Parceiros</a>
+                 <a href="#">Parceiros</a>
                 <a href="#"><span>TRC Taborda Autorizada</span></a>
             </div>
         </nav>
         <nav class="navigation-mobile">
-            <img src="./imagem/logo renner.png">
+            <div class="img-nav">
+                <img src="./imagem/logo renner.png">
+                <img src="./imagem/logo realize.png" style="width: 40%; height: 30px;">
+           </div>
             <div>
                 <button id="button-mobile">☰</button>
             </div>
                 <div id="menu">
                     <button id="button-mobilefechar">☰</button>
                     <a href="#">Venha nos cohecer</a>
-                    <a href="#">Serasa</a>
                     <a href="#">Parceiros</a>
                     <a href="#"><span>TRC Taborda Autorizada</span></a>
             </div>
@@ -54,9 +58,9 @@
                     <span>Propostas</span>
                 </a>
             
-                <a href="https://api.whatsapp.com/send?phone=554130220411" class="button">
-                    <img src="imagem/comente.png" alt="Dúvidas">
-                    <span>Tire suas Dúvidas</span>
+                <a href="mailto:jhowmaravilha11@gmail.com" class="button">
+                    <img src="imagem/envelope.png" alt="Dúvidas">
+                    <span>Entre em contato pelo E-mail</span>
                 </a>
                 <a href="https://api.whatsapp.com/send?phone=554130220411" class="button">
                     <img src="imagem/comente.png" alt="Dúvidas">
@@ -106,6 +110,18 @@
         </div>
         <div class="button-app">
             <a href="https://lojasrenner.onelink.me/UVlR/e7e46298">Acesse aqui</a>
+        </div>
+     </div>
+     <div class="serasa">
+        <div>
+            <img src="./imagem/banner serasa.png">
+        </div>
+        <div class="serasa-text">
+            <h5>Serasa limpa nome</h5>
+            <p> ✅ Descontos Especiais – Pague menos ao negociar suas dívidas.<br>
+                ✅ Parcelamento Fácil – Opções acessíveis para quitar no seu ritmo.<br>
+                ✅ 100% Online – Resolva tudo pelo site ou app, sem sair de casa.<br>
+                ✅ Nome Limpo Rápido – Após o pagamento, seu nome pode ser regularizado em poucos dias.</p>
         </div>
      </div>
      <div class="title-trc">
@@ -159,7 +175,7 @@
             <form class="form" method="post" action="php/cadastro.php"> 
                 <span class="title">Atualize o seu cadastro</span>
                 <div class="form-container">
-                    <input type="text" name="name" class="input" placeholder="CPF/CNPJ" required>
+                    <input type="text" name="name" class="input" placeholder="Nome" required>
                     <input type="email" name="email" class="input" placeholder="Email" required>
                     <input type="number" name="numero" class="input" placeholder="Número" required>
                 </div>

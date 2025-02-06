@@ -1,12 +1,19 @@
 <?php
+$host = 'JHONATAN\SQLEXPRESS';           
+$dbname = 'LADING';     
+$username = '';                
+$password = '';                
+
 try {
-    $conexao = new PDO('sqlsrv:Server=JHONATAN\SQLEXPRESS;Database=LADING', null, null);
+   
+    $conexao = new PDO("sqlsrv:Server=$host;Database=$dbname", $username, $password);
     
+   
     $conexao->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    
-    echo "Conectado com sucesso ao banco de dados!";
+
+    echo "Sucesso"; 
 } catch (PDOException $e) {
-    echo "Erro ao conectar: " . $e->getMessage();
+    echo "Falha: " . $e->getMessage();
+    die();
 }
 ?>
-    

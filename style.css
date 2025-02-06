@@ -384,7 +384,36 @@ nav img{
     background-color: #a8470e;
   }
   
+ .serasa{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #e9e6e7;
+    margin-top: 100px;
+ }
 
+ .serasa-text{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat', Arial, sans-serif;
+    gap: 30px;
+    padding-top: 20px;
+ }
+
+ .serasa-text h5{
+    background: linear-gradient(90deg, #d71920, #d71920, #faf1f1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+
+ }
+
+ .img-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
 
 #menu {
     display: none;
@@ -531,6 +560,16 @@ nav img{
         flex-direction: column;
     }
 
+    
+    .serasa{
+        flex-direction: column;
+        height: 80vh;
+    }
+
+    .serasa-text{
+        margin: 20px;
+    }
+
 }
 
 /* Telas até 768px */
@@ -585,6 +624,16 @@ nav img{
         flex-direction: column;
     }
    
+    
+    .serasa{
+        flex-direction: column;
+        height: 80vh;
+    }
+
+    .serasa-text{
+        margin: 20px;
+    }
+
 }
 
 /* Telas até 480px */
@@ -638,5 +687,16 @@ nav img{
     .container{
         flex-direction: column;
     }
+
+    .serasa{
+        flex-direction: column;
+        height: 80vh;
+    }
+
+    .serasa-text{
+        margin: 20px;
+    }
+
+   
    
 }
