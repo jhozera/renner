@@ -492,6 +492,11 @@ nav img{
     .image-mobile{
         display: none;
     }
+
+    .vantagens{
+        height: auto;
+        padding: 20px;
+    }
 }
 
 
@@ -548,12 +553,14 @@ nav img{
 
 
     .vantagens{
-        height: 120vh;
+        height: auto;
+        padding: 40px;
     }
 
     
     .trc-pr{
-        height: 80vh;
+        height: auto;
+        padding: 50px;
     }
     
     .navigation{
@@ -571,11 +578,17 @@ nav img{
     
     .serasa{
         flex-direction: column;
-        height: 80vh;
+        height: auto;
+        padding: 20px;
     }
 
     .serasa-text{
         margin: 20px;
+    }
+
+    .container img{
+        margin: 20px;
+
     }
 
 }
@@ -612,7 +625,8 @@ nav img{
     }
 
     .vantagens{
-        height: 200vh;
+        height: auto;
+        padding: 20px;
     }
 
     .navigation{
@@ -620,7 +634,8 @@ nav img{
     }
     
     .trc-pr{
-        height: 110vh;
+        height: auto;
+        padding: 50px;
     }
     
 
@@ -635,11 +650,17 @@ nav img{
     
     .serasa{
         flex-direction: column;
-        height: 80vh;
+        height: auto;
+        padding: 20px;
     }
 
     .serasa-text{
         margin: 20px;
+    }
+
+    .container img{
+        margin: 20px;
+
     }
 
 }
@@ -676,7 +697,8 @@ nav img{
     }
 
     .vantagens{
-        height: 200vh;
+        height: auto;
+        padding: 20px;
     }
 
     .navigation{
@@ -698,13 +720,24 @@ nav img{
 
     .serasa{
         flex-direction: column;
-        height: 80vh;
+        height: auto;
+        padding: 10px;
     }
 
     .serasa-text{
         margin: 20px;
     }
 
+    .container img{
+        margin: 20px;
+
+    }
+
+    #button-mobile{
+        padding: 20px;
+    }
+   
    
    
 }
+
