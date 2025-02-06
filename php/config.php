@@ -1,6 +1,6 @@
 <?php
-$host = 'JHONATAN\SQLEXPRESS';           
-$dbname = 'LADING';     
+$host = 'trc-dc-bd2';           
+$dbname = 'Planejamento';     
 $username = '';                
 $password = '';                
 

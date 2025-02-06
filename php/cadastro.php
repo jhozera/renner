@@ -8,13 +8,13 @@ if (!isset($conexao)) {
 }
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $name = $_POST["name"];
-    $email = $_POST["email"];
-    $numero = $_POST["numero"];
+    $name = $_POST["NOME"];
+    $email = $_POST["EMAIL"];
+    $numero = $_POST["TELEFONE"];
 
     try {
    
-        $sql = "INSERT INTO leads_renner (nome, email, numero) VALUES (?, ?, ?)";
+        $sql = "INSERT INTO DADOS_RENNER_LP (NOME, EMAIL, TELEFONE) VALUES (?, ?, ?)";
 
         $stmt = $conexao->prepare($sql);
         $stmt->bindParam(1, $name, PDO::PARAM_STR);
@@ -24,15 +24,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         $stmt->execute();
 
-
-        $mensagem = 'Obrigado por atualizar seus dados, até 24horas um dos nossos especialista vão entrar em contato';
-
         echo $mensagem;
        
-        // $whats = "https://api.whatsapp.com/send?phone=554130220411";
+        $whats = "https://api.whatsapp.com/send?phone=554130220411";
 
-        // header("Location: $whats");
-        // exit();
+        header("Location: $whats");
+        exit();
     } catch (PDOException $e) {
         echo "Erro ao cadastrar: " . $e->getMessage();
     }
