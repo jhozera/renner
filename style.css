@@ -39,7 +39,9 @@ nav img{
 }
 
 .button-nav a span{
+    font-size: 15px;
     color: #d71920;
+    font-weight: 600;
 }
 
 .container {
@@ -59,6 +61,7 @@ nav img{
     flex-direction: column;
     
 }
+
 
 
 .button {
@@ -114,10 +117,24 @@ nav img{
     padding: 20px;
 }
 
-.vantagens img{
+.img-b{
+    background-color: #4e4e4e;
     display: block;
     margin: 0 auto; 
-    width: 15%;
+    border-radius: 20px;
+    padding: 20px;
+    width: 100px;
+}
+
+.img-b img{
+    filter: invert();
+    width: 60%;
+
+}
+
+.lo1:hover, .lo2:hover, .lo3:hover, .lo4:hover{
+    background-color: #d71920;
+    transition: 3s;
 }
 
 .vantagens-gt{
@@ -292,7 +309,7 @@ nav img{
   .button-app{
     text-align: center;
     background-color: #d71920;
-    width:200px;
+    width:250px;
     height:40px;
     align-content: center;
     border-radius: 20px;
@@ -301,11 +318,17 @@ nav img{
 
   .button-app a{
     text-decoration: none;
-    color: white;
     font-size: 25px;
-    font-weight: bold;
+    text-align: center;
+    align-content: center;
+    color: white;
+    font-weight: 600;
     font-family: 'Montserrat', Arial, sans-serif;
 
+  }
+
+  .button-app:hover{
+    background-color: #860808;
   }
 
   .modal-overlay {
@@ -335,7 +358,7 @@ nav img{
     position: absolute;
     top: 10px;
     right: 10px;
-    background: linear-gradient(to top, #d71920 10%, #d71920 50%, #860808 90%);
+    background: #d71920;
     color: rgb(255, 255, 255);
     border: none;
     border-radius: 50%;
@@ -371,8 +394,9 @@ nav img{
   .botao {
     width: 100%;
     padding: 10px;
-    background: linear-gradient(to top, #d71920 10%, #d71920 50%, #860808 90%);
+    background: #d71920;
     color: white;
+    font-weight: 600;
     border: none;
     border-radius: 20px;
     cursor: pointer;
@@ -381,7 +405,7 @@ nav img{
   }
   
   .botao:hover {
-    background-color: #a8470e;
+    background-color: #890f07;
   }
   
  .serasa{
@@ -409,6 +433,10 @@ nav img{
 
  }
 
+ .serasa-text p{
+    font-size: 20px;
+ }
+
  .img-nav{
     display: flex;
     justify-content: center;
@@ -422,6 +450,24 @@ nav img{
     left: -10px; right: -10px;
     background: transparent;
 }
+
+.button-serasa{
+    text-decoration: none;
+    font-size: 25px;
+    background-color: #d71920;
+    text-align: center;
+    align-content: center;
+    width: 250px;
+    height: 40px;
+    border-radius: 20px;
+    color: white;
+    font-weight: 600;
+}
+
+
+.button-serasa:hover{
+    background-color: #860808;
+  }
 
 #menu {
     display: none;
@@ -466,6 +512,9 @@ nav img{
     margin-left: 20px;
 }
 
+
+
+
 @media (min-width:1501px){
     .container {
         display: flex;
@@ -495,7 +544,22 @@ nav img{
 
     .vantagens{
         height: auto;
-        padding: 20px;
+        padding: 50px;
+    }
+
+    .trc-pr{
+        height: auto;
+        padding: 100px;
+    }
+
+    .app{
+        height: auto;
+        padding: 50px;
+    }
+
+    .serasa{
+        height: auto;
+        padding: 50px;
     }
 }
 
@@ -507,8 +571,6 @@ nav img{
         max-width: 100%;
         width: 100vw; 
     }
-    
-
     
     .navigation-mobile{
         display: none;
@@ -523,6 +585,26 @@ nav img{
         height: auto;
         display: block;
     }
+
+    .vantagens{
+        height: auto;
+        padding: 50px;
+    }
+
+    .serasa{
+        height: auto;
+        padding: 50px;
+    }
+
+    .app{
+        height: auto;
+        padding: 50px;
+    }
+    .trc-pr{
+        height: auto;
+        padding: 100px;
+    }
+
 }
 
 
@@ -544,8 +626,11 @@ nav img{
     }
 
     .app{
+        height: auto;
+        padding: 50px;
         text-align: center;
     }
+
 
     .text-app h3{
         font-size: 30px;
@@ -579,7 +664,7 @@ nav img{
     .serasa{
         flex-direction: column;
         height: auto;
-        padding: 20px;
+        padding: 40px;
     }
 
     .serasa-text{
@@ -606,7 +691,8 @@ nav img{
     }
 
     .app{
-        text-align: center;
+        height: auto;
+        padding: 50px;
     }
 
     .text-app h3{
@@ -678,7 +764,8 @@ nav img{
     }
 
     .app{
-        text-align: center;
+        height: auto;
+        padding: 50px;
     }
 
     .text-app h3{
@@ -698,7 +785,7 @@ nav img{
 
     .vantagens{
         height: auto;
-        padding: 20px;
+        padding: 40px;
     }
 
     .navigation{
@@ -706,7 +793,8 @@ nav img{
     }
     
     .trc-pr{
-        height: 110vh;
+        height: auto;
+        padding: 40px;
     }
     
 

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,8 +14,7 @@
                 <img src="./imagem/logo realize.png" style="width: 40%; height: 30px;">
            </div>
             <div class="button-nav">
-                <a href="#">Venha nos cohecer</a>
-                 <a href="#">Parceiros</a>
+                <a href="#">Venha nos conhecer</a>
                 <a href="#"><span>TRC Taborda Autorizada</span></a>
             </div>
         </nav>
@@ -30,7 +29,6 @@
                 <div id="menu">
                     <button id="button-mobilefechar">☰</button>
                     <a href="#">Venha nos cohecer</a>
-                    <a href="#">Parceiros</a>
                     <a href="#"><span>TRC Taborda Autorizada</span></a>
             </div>
         </nav>
@@ -43,7 +41,7 @@
             </div>
     
             <div class="buttons-container" >
-                <a class="button" id="button">
+                <a class="button">
                     <img src="imagem/whatsapp.png" alt="WhatsApp">
                     <span >Negocie no WhatsApp </span>
                 </a>
@@ -62,7 +60,7 @@
                     <img src="imagem/envelope.png" alt="Dúvidas">
                     <span>Entre em contato pelo E-mail</span>
                 </a>
-                <a href="https://api.whatsapp.com/send?phone=554130220411" class="button">
+                <a id="button" class="button">
                     <img src="imagem/comente.png" alt="Dúvidas">
                     <span>Tire suas Dúvidas</span>
                 </a>
@@ -75,24 +73,32 @@
             <p style="font-size: 30px; color: black;">Descubra os benefícios de estar conectado na era digital</p>
             <div class="vantagens-gt">
                 <div class="lo1">
-                    <img src="./imagem/icone4.png">
+                    <div  class="img-b">
+                        <img src="./imagem/icone4.png">
+                    </div>
                     <p>Negociar débitos online oferece rapidez, segurança e <br>
                         descontos exclusivos, permitindo parcelamento fácil e acessível.</p>
                 </div>
                 <div class="lo2">
-                    <img src="./imagem/icone2.png">
+                    <div class="img-b">
+                        <img  src="./imagem/icone2.png">
+                    </div>
                     <p>Com a negociação digital, você evita filas, acessa <br>
                         condições especiais e resolve suas pendências de forma simples e rápida.</p>
                 </div>
                 <div class="lo3">
-                    <img src="./imagem/icone3.png">
+                    <div class="img-b">
+                        <img src="./imagem/icone3.png">
+                    </div>
                     <p>Quitação online garante praticidade, transparência <br>
                          e flexibilidade, ajudando você a regularizar dívidas sem burocracia.</p>
                 </div>
                 <div class="lo4">
-                    <img src="./imagem/icone1.png">
-                    <p>Pague seus débitos online com descontos e parcelas acessíveis, <br>
-                        aproveitando a comodidade de resolver tudo sem sair de casa.</p>
+                    <div class="img-b">
+                        <img src="./imagem/icone1.png">
+                    </div>
+                    <p>Pague seus débitos online com descontos e parcelas <br>
+                        acessíveis, aproveitando a comodidade de resolver tudo sem sair de casa.</p>
                 </div>
             </div>
          </div>
@@ -125,7 +131,10 @@
                 <br>
                 ✅ 100% Online – Resolva tudo pelo site ou app, sem sair de casa.<br>
                 <br>
-                ✅ Nome Limpo Rápido – Após o pagamento, seu nome pode ser regularizado em poucos dias.</p>
+                ✅ Nome Limpo Rápido – Após o pagamento, seu nome pode ser <br>
+                regularizado em poucos dias.</p>
+                <br>
+                <a class="button-serasa" href="https://www.serasa.com.br/limpa-nome-online/?gad_source=1&gclid=CjwKCAiA2JG9BhAuEiwAH_zf3vBZWM9N6rkUulQaqZOfT4j-0mw2gB0MpaPCLNfiE_ZqenhkIPHeWxoCuVcQAvD_BwE">Acesse aqui</a>
         </div>
      </div>
      <div class="title-trc">
@@ -179,14 +188,14 @@
             <form class="form" method="post" action="php/cadastro.php"> 
                 <span class="title">Atualize o seu cadastro</span>
                 <div class="form-container">
-                    <input type="text" name="NOME" class="input" placeholder="Nome" required>
-                    <input type="email" name="EMAIL" class="input" placeholder="Email" required>
-                    <input type="number" name="TELEFONE" class="input" placeholder="Número" required>
+                    <input type="text" name="name" class="input" placeholder="Nome" required>
+                    <input type="email" name="email" class="input" placeholder="Email" required>
+                    <input type="number" name="numero" class="input" placeholder="Número" required>
                 </div>
-                <button type="submit" class="botao">Atualizar</button>
+                <button type="submit" class="botao" onclick="popup()">Atualizar</button>
             </form>
         </div>
-    </div>    
-    <script src="./index.js"></script>
+    </div>
+    <script src="./interface/index.js"></script>
 </body>
 </html>
